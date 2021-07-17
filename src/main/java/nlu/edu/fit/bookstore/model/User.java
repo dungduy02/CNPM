@@ -5,8 +5,12 @@ public class User {
     String username;
     String address;
     String fullname;
-    int password;
+    String password;
     String email;
+    int phone;
+    String sex;
+    String dob;
+
 
     public int getId() {
         return id;
@@ -40,11 +44,11 @@ public class User {
         this.fullname = fullname;
     }
 
-    public int getPassword() {
+    public String getPassword() {
         return password;
     }
 
-    public void setPassword(int password) {
+    public void setPassword(String password) {
         this.password = password;
     }
 
@@ -55,4 +59,45 @@ public class User {
     public void setEmail(String email) {
         this.email = email;
     }
+
+    public int getPhone() {
+        return phone;
+    }
+
+    public void setPhone(int phone) {
+        this.phone = phone;
+    }
+
+    public String getSex() {
+        return sex;
+    }
+
+    public void setSex(String sex) {
+        this.sex = sex;
+    }
+
+    public String getDob() {
+        return dob;
+    }
+
+    public void setDob(String dob) {
+        this.dob = dob;
+    }
+
+    public User() {
+    }
+
+    public User(int id, String username, String address, String fullname, String password, String email, int phone, String sex, String dob) {
+        this.id = id;
+        this.username = username;
+        this.address = address;
+        this.fullname = fullname;
+        this.password = password;
+        this.email = email;
+        this.phone = phone;
+        this.sex = sex;
+        this.dob = dob;
+    }
+
+
 }
