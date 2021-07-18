@@ -8,12 +8,12 @@ import java.sql.SQLOutput;
 public class Utils {
     public static String fullPath(String path) {
 
-        return "https://jb-bookstore.herokuapp.com/" + path;
+        return "https://bookstores-jb.herokuapp.com/" + path;
     }
 
     public static String fullPathAdmin(String path) {
 
-        return "https://jb-bookstore.herokuapp.com/" + path;
+        return "https://bookstores-jb.herokuapp.com/" + path;
     }
 
     public static boolean isEmail(String email) {
