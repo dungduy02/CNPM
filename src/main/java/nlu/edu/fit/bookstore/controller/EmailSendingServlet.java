@@ -44,7 +44,7 @@ public class EmailSendingServlet extends HttpServlet {
         String recipient = request.getParameter("recipient");
         String subject = "Yêu cầu lấy lại mật khẩu";
 
-        String linkCallBack = "https://jb-bookstore.herokuapp.com/forgotPassCallBack?email="+recipient+"&token=";
+        String linkCallBack = "https://bookstorejb.herokuapp.com/forgotPassCallBack?email="+recipient+"&token=";
         String token = hashToken(Math.random() + "");
         String content = "Vui lòng nhập <a href="+linkCallBack +token+">link</a> này ";
         AccountRepo.updateToken(token,recipient);

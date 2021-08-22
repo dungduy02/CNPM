@@ -18,12 +18,12 @@
 
   <context-param>
     <param-name>user</param-name>
-    <param-value>quochuynh1305@gmail.com</param-value>
+    <param-value>dungduy020@gmail.com</param-value>
   </context-param>
 
   <context-param>
     <param-name>pass</param-name>
-    <param-value>huynhkyvuongquoc</param-value>
+    <param-value>tauziwacabcavkeo</param-value>
   </context-param>
 
   <welcome-file-list>
