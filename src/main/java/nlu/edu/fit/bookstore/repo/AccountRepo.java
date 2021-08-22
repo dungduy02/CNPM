@@ -110,7 +110,7 @@ public class AccountRepo {
             ResultSet rss = pr.executeQuery();
             if (rss.next()) {
 
-                return rss.getString("token");
+                return rss.getString("email");
             }
             return null;
         } catch (SQLException throwables) {
@@ -128,14 +128,18 @@ public class AccountRepo {
             pr.setString(1, MD5.encryption(pass));
             pr.setString(2, email);
             int rss = pr.executeUpdate();
-            return true;
-        } catch (SQLException throwables) {
             return false;
+        } catch (SQLException throwables) {
+            return true;
         }
     }
 
     // cần user info để lưu session
-//    public static void main(String[] args) {
-//        System.out.println(getToken("quochuynh1305@gmail.com"));
-//    }
+    public static void main(String[] args) {
+//        System.out.println(signin("vbn","dungduy020@gmail.com","vbn","234"));
+//        System.out.println(checkUsername("dfg"));
+        System.out.println(getToken("dungduy20000@gmail.com"));
+        System.out.println(updatePass("dfgd", "dungduy20000@gmail.com"));
+
+    }
 }

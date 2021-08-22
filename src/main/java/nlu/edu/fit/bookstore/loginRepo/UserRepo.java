@@ -108,4 +108,8 @@ public class UserRepo {
 
         return 0;
     }
+
+    public static void main(String[] args) {
+        System.out.println(resetPass(new User(1, "dfg", "dfg", "dfg", "dfg" , "20000@gmail.com",1234567890, null, null)));
+    }
 }
